@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: #e8f1fa;
+    --text-dark:#282d31;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --max-width:1200px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.section-container{
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+    margin: auto;
+    
+
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+.section-subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+body{
+    font-family: "DM Sans", serif;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: var(--extra-light);
+    font-size: 1.5rem;
+}
+
+.nav-links{
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+    color: #f3f4f6;
+}
+
+.link{
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: var(--primary-color);
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(45,92,132,.5),rgba(45,92,132,.5)),url(images/logo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .section-container{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+}
+
+.header-content h1{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+
+}
+
+.header-content p{
+    text-align: center;
+}
+
+.header-content button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color)  ;
+    color: var(--extra-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.header-content button:hover{
+    background-color: var(--primary-color-dark);
+}
+
+.gdg-constainer{
+    background-color: var(--secondary-color);
+}
+.gdg-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.gdg-card{
+    background-color: var(--extra-light)    ;
+}
+
+.gdg-name{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light) ;
+    cursor: pointer;
+
+}
+.gdg-name i{
+    font-size: 1.2rem;
+}
+.gdg-name span{
+    font-style:italic ;
+}
+
+.banner-container{
+    background-image: linear-gradient(rgba(35,72,103,0.5),rgba(35,72,103,0.5)),url(images/pic6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.banner-container .section-container{
+    padding: 10rem 1rem ;
+    display: flex;
+    
+    justify-content: center;
+}
+.banner-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--extra-light);
+
+}
+
+.banner-content h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.banner-content button{
+    padding: .5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.information{
+    text-align: center;
+    text-decoration-line: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+    background-color: #4285F4; 
+    border: 2px solid #4285F4;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 40px;
+    width: 210px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.display-container{
+    background-color: var(--secondary-color);
+}
+.display-container :is(.section-title, .section-subtitle){
+    color: var(--text-dark);
+}
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.display-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    gap: 0.5rem;
+    background-color: var(--extra-light);
+    text-align: center;
+
+}
+.display-card i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.display-card h4{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    color: var(--text-dark);
+}
+.display-card p{
+    font-size: .8rem;
+    padding: 0 1rem;
+    color: var(--text-dark);
+}
+.display-grid .grid-1{
+    grid-area:1/1/3/3 ;
+}
+
+footer{
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+}
+
+footer .section-container{
+    display: grid;
+    gap: 1.5rem ;
+    text-align: center;
+}
+ footer h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+ .social.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1rem 0;
+}
+
+.social.icon span {
+    display: inline-flex;
+    transition: all 0.3s ease;
+}
+
+.social.icon i {
+    font-size: 1.8rem; 
+    color: #ffffff;  
+    transition: all 0.3s ease;
+}
+
+ 
+.social.icon span:hover i.ri-facebook-fill { color: #1877F2; }
+.social.icon span:hover i.ri-instagram-line { color: #ad428f; }
+.social.icon span:hover i.ri-github-fill { color: #f3f3f3; }
+.social.icon span:hover i.ri-youtube-line { color: #d83939; }
+
+ 
+.social.icon span:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+footer p{
+    font-style: italic;
+}
+
+
+@media (min-width: 146px) {
+    
+}
+
+@media (min-width: 640px) {
+    .nav-links{
+        display: flex;
+    }
+
+    header .section-container{
+        justify-content: flex-start;
+    }
+
+    .header-content{
+        max-width: 400px;
+        align-items: flex-start;
+    }
+
+    .header-content p{
+        text-align: left;
+    }
+
+    .gdg-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    .display-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .display-card{
+        gap: 0;
+    }
+    .display-card i{
+        font-size: 1.75rem;
+    }
+    .display-card h4{
+        font-size: 1rem;
+    }
+    .display-card p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:790px) {
+    .banner-container .section-container{
+        justify-content: flex-end;
+    }
+
+    .banner-content{
+        align-items: flex-end;
+        text-align: right;
+        max-width: 800px;
+    }
+    .display-card{
+            align-items: flex-end;
+            text-align: right;
+            max-width: 800px;
+    }
+    .display-card{
+        gap:.5rem;
+    }
+
+    .display-card i{
+        font-size: 2.5rem;
+    }
+    .display-card p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .display-card{
+        gap: 1rem;
+    }
+    .display-card i{
+        font-size: 3rem;
+    }
+    .display-card h4{
+        font-size: 1.5rem;
+    }
+    .display-card p{
+        font-size:1rem ;
+    }
+}
+
+.Read{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+.footer-team {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee; 
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-info strong {
+    display: block;
+    font-size: 1.1em;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.member-info span {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.member-photo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  
+    object-fit: cover; 
+    border: 2px solid #4CAF50; 
+}

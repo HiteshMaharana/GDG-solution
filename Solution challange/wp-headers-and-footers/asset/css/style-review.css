@@ -1,0 +1,120 @@
+.wpheaderandfooter-review-notice {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpheaderandfooter-review-notice:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wpheaderandfooter-review-thumbnail {
+    width: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.wpheaderandfooter-review-thumbnail img {
+    width: 68px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.wpheaderandfooter-review-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.wpheaderandfooter-review-text h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #23282d;
+}
+
+.wpheaderandfooter-review-text p {
+    font-size: 14px;
+    margin: 0 0 15px;
+    color: #646970;
+    line-height: 1.5;
+}
+
+.wpheaderandfooter-review-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.wpheaderandfooter-review-ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+.wpheaderandfooter-review-ul li a {
+    display: inline-flex;
+    align-items: center;
+    color: #2271b1;
+    text-decoration: none;
+    padding: 5px 10px 5px 30px;
+    position: relative;
+    background-color: #f0f6fc;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.wpheaderandfooter-review-ul li a:hover {
+    background-color: #e0e9f5;
+    color: #135e96;
+}
+
+.wpheaderandfooter-review-ul li a span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 782px) {
+    .wpheaderandfooter-review-notice {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .wpheaderandfooter-review-thumbnail {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .wpheaderandfooter-review-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .wpheaderandfooter-review-ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .wpheaderandfooter-review-ul li a {
+        width: 100%;
+        justify-content: center;
+    }
+}

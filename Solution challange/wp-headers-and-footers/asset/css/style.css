@@ -1,0 +1,109 @@
+.wp-headers-and-footers .group h3 {
+    display: none;
+}
+
+.wp-headers-and-footers textarea {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.wp_header_textarea .CodeMirror, 
+.wp_body_textarea .CodeMirror, 
+.wp_footer_textarea .CodeMirror {
+    border: 1px solid #ccd0d4;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header-and-footer-setting input[type=number] {
+    padding: 13px 15px;
+    min-height: 30px;
+    border: 2px solid #D2DDF2;
+    height: 50px;
+    width: 100%;
+    max-width: 450px;
+    font-family: "Poppins", sans-serif;
+    color: #5C7697;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 5px;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.header-and-footer-setting input[type=number]::placeholder {
+    color: #D2DDF2;
+}
+
+#wpheaderandfooter_settings td .description {
+    font-family: "Poppins", sans-serif;
+    color: #5C7697;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 4px auto;
+    max-width: 750px;
+    text-align: center;
+    display: block;
+}
+
+.header-and-footer-setting {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    float: none;
+}
+
+ 
+.wp-headers-and-footers .wpbr-sidebar {
+    display: none;
+}
+
+
+.wp-headers-and-footers .form-table {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.wp-headers-and-footers .form-table th,
+.wp-headers-and-footers .form-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.wp-headers-and-footers .form-table th {
+    padding-bottom: 5px;
+}
+
+
+.wp-headers-and-footers p.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 782px) {
+    .wp-headers-and-footers textarea,
+    .wp_header_textarea .CodeMirror, 
+    .wp_body_textarea .CodeMirror, 
+    .wp_footer_textarea .CodeMirror {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .header-and-footer-setting input[type=number] {
+        max-width: 100%;
+    }
+    
+    #wpheaderandfooter_settings td .description {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
